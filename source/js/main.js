@@ -8,8 +8,8 @@ const warning = document.querySelector('.label-warning');
 btnResult.addEventListener('click', function () {
   if (Number(enterHour.value) > 0) {
     resultHour.textContent = Number(enterHour.value) + 2;
-    if (Number(enterMinute.value) > 0) {
-      resultMinute.textContent = Number(enterMinute.value);
+    if (enterMinute) {
+      resultMinute.textContent = enterMinute.value;
     } else {
       resultMinute.textContent = '';
     }
